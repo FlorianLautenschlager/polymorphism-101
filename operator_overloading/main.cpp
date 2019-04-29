@@ -8,15 +8,13 @@
 
 #include <stdio.h>
 #include <vector>
-#include  <iostream>
+#include <iostream>
 using std::vector;
 
 class TimeSeries {
 private:
     vector<int> t; vector<int> v;
 public:
-    // This is automatically called when '+' is used with
-    // between two TimeSeries objects
     TimeSeries operator + (TimeSeries const &other) {
         TimeSeries result;
         
@@ -34,16 +32,10 @@ public:
         
         return result;
     }
-    void print() {
-        for (int t : t) std::cout << t << " ";
-        for (int v : v) std::cout << v << " ";
-    }
 };
 
 int main(int argc, const char * argv[]) {
-    std::cout << "Nice operator overloading \n";
     TimeSeries first, second, third;
-    third = first + second;
-    third.print();
+    third = first + second; //add first to second using '+'
     return 0;
 }

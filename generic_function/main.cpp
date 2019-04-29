@@ -15,7 +15,7 @@ T larger(T first, T second){
 }
 template <typename T>
 void print(T result){
-    cout << result << "\n";
+    cout << result << std::endl;
 }
 
 int main(){

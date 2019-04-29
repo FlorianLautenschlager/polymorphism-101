@@ -10,14 +10,13 @@
 using std::cout;
 
 void print(int  i){
-    cout << "int: " << i << "\n";
+    cout << "int: " << i << std::endl;
 }
 void print(std::string s){
-    cout << "string: " << s << "\n";
+    cout << "string: " << s << std::endl;
 }
 int main(int argc, const char * argv[]) {
-    cout << "Nice function overloading \n";
-    print(5);
-    print("5");
+    print(5); // int: 5
+    print("5"); //string: 5
     return 0;
 }
