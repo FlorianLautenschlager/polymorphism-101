@@ -17,7 +17,7 @@ int main(int argc, const char * argv[]) {
     
     print(5.3); //Implizit: Verengen (narrowing) double -> int
     print(true); //Implizit: Erweitern (widening) bool -> int
-    print((int) false); //Explizit: Erweitern (narrowing) bool -> int
+    print((int) false); //Explizit: Erweitern (widening) bool -> int
     
     return 0;
 }
